@@ -30,6 +30,6 @@ Example
 $> yade -src ui/static/,ui/index.html,ui/dest
 ```
 
-#3 Attribution
+## Attribution
 
 This package is highly inspired from [go-bindata](https://github.com/jteeuwen/go-bindata)
