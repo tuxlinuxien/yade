@@ -119,7 +119,6 @@ func openFile(f string, tr *tar.Writer) {
 	finfo, _ := fdata.Stat()
 	tHeader.Name = f
 	tHeader.Size = finfo.Size()
-	tHeader.ModTime = finfo.ModTime()
 	tr.WriteHeader(tHeader)
 	l, err := io.Copy(tr, fdata)
 	if l != finfo.Size() {
